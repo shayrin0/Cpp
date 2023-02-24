@@ -71,4 +71,5 @@ void processFile (ifstream& inFile)
             }
         }
     }
+    outFile.close();
 }

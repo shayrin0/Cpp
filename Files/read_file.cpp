@@ -5,16 +5,18 @@
 
 using namespace std;
 
-void openFile(ifstream&, string);
-void processFile(ifstream&);
+void openFile (ifstream&, string);
+void processFile (ifstream&);
 
 int main()
 {
+    string line;
+
     // 1. open the file
     ifstream inFile;
     openFile(inFile, "sentence.txt");
 
-    // 2. process the file
+    // // 2. process the file
     processFile(inFile);
 
     // 3. close the file
@@ -23,7 +25,7 @@ int main()
     return 0;
 }
 
-void openFile(ifstream& inFile, string fname)
+void openFile (ifstream& inFile, string fname)
 {
     inFile.open(fname);
 
@@ -36,7 +38,7 @@ void openFile(ifstream& inFile, string fname)
     }
 }
 
-void processFile(ifstream& inFile)
+void processFile (ifstream& inFile)
 {
     string line, word;
     istringstream iss;

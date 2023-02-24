@@ -16,6 +16,7 @@ int main()
     // 2. process the file
 
     // 3. close the file
+    inFile.close();
 
     return 0;
 }

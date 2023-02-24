@@ -38,7 +38,8 @@ void openFile(ifstream& inFile, string fname)
 
 void processFile(ifstream& inFile)
 {
-    string line;
+    string line, word;
+    istringstream iss;
 
     while(!inFile.eof()) // eof = end of file
     {
@@ -48,6 +49,16 @@ void processFile(ifstream& inFile)
         if (inFile.good())
         {
             cout << line << endl;
+
+            // read word by word from the file
+            iss.clear(); // clear out state
+            iss.str(line);
+
+            while(iss.good())
+            {
+                iss >> word;
+                cout << word << endl;
+            }
         }
     }
 }

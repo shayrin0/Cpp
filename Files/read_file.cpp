@@ -50,7 +50,7 @@ void processFile(ifstream& inFile)
         {
             cout << line << endl;
 
-            // read word by word from the file
+            // read word by word from the line
             iss.clear(); // clear out state
             iss.str(line);
 
@@ -58,6 +58,10 @@ void processFile(ifstream& inFile)
             {
                 iss >> word;
                 cout << word << endl;
+
+                // read char by char from the word
+                for (char c : word)
+                    cout << c << endl;
             }
         }
     }

@@ -43,6 +43,10 @@ void processFile (ifstream& inFile)
     string line, word;
     istringstream iss;
 
+    // write the chars in another file
+    ofstream outFile;
+    outFile.open("chars.txt");
+
     while(!inFile.eof()) // eof = end of file
     {
         // read line by line from the file
@@ -63,7 +67,7 @@ void processFile (ifstream& inFile)
 
                 // read char by char from the word
                 for (char c : word)
-                    cout << c << endl;
+                    outFile << c << endl;
             }
         }
     }

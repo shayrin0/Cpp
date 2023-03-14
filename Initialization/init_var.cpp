@@ -1,6 +1,9 @@
 
 /*
     Methods of initializing variables and arrays
+    1. Value initialization => T obj{}
+    2. Direct initialization => T obj{v}
+    3. Copy initialization => T obj = v
 */
 
 #include <iostream>

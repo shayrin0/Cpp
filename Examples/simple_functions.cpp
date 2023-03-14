@@ -33,7 +33,7 @@ int main()
     cout << "c=" << c << endl;
 
     Factorial(&c, &d);
-    cout << d << endl;
+    cout << "factorial of " << c << " is " << d << endl;
 
     return 0;
 }

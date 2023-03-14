@@ -1,4 +1,6 @@
 
+/* Pointers example */
+
 #include <iostream>
 
 using namespace std;

@@ -42,6 +42,7 @@ void processFile (ifstream& inFile)
 {
     string line, word;
     istringstream iss;
+    int count=0;
 
     // write the chars in another file
     ofstream outFile;
@@ -67,7 +68,7 @@ void processFile (ifstream& inFile)
 
                 // read char by char from the word
                 for (char c : word)
-                    outFile << c << endl;
+                    cout << c << endl;
             }
         }
     }

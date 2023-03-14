@@ -1,5 +1,10 @@
-the quick brown
-fox jumps
-over
-the lazy
-dog
+Sampling Frequency (Hz): 244.14 
+Number of Samples: 3 
+Project: senq 
+Setup: 7 
+Sensor ID: 3 
+ Vx  Vy Vz   Ax Ay  Az
+
+
+
+110110010001001110010011111110000100101001001010100101010010101010

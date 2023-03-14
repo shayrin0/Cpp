@@ -22,5 +22,17 @@ int main()
     char d3[8] = {'a', 'b', 'c'}; // aggregate initialization
     char d4[8] = {"abcd"};
 
+    // Uniform initialization
+    int b1{}; // value initialization, initializes to 0
+    // int b2(); // most vexing parse (b2 is a function)
+    int b3{5}; // direct initialization
+
+    int e1[8]{};
+    int e2[8]{"Hello"};
+
+    int *p1 = new int();
+    char *p2 = new char[8]{};
+    char *p3 = new char[8]{"Hello"};
+
     return 0;
 }

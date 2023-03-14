@@ -12,16 +12,20 @@ void Print (int count, char ch)
 
 void EndMessage()
 {
-
+    cout << "End of Program!" << endl;
 }
 
 int main()
 {
+    atexit(EndMessage);
+    
     Print(5, '#');
 
     void (*ptr)(int, char) = Print;
     (*ptr)(8, '*');
     ptr(3, '@');
+
+    cout << "End of Main!" << endl;
 
     return 0;
 }

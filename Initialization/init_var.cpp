@@ -28,7 +28,7 @@ int main()
     int b3{5}; // direct initialization
 
     int e1[8]{};
-    int e2[8]{"Hello"};
+    char e2[8]{"Hello"};
 
     int *p1 = new int();
     char *p2 = new char[8]{};
